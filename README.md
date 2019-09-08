@@ -47,6 +47,7 @@ If you discover any security related issues, please email contato@mateusjunges.c
 ## Credits
 
 - [Mateus Junges](https://github.com/mateusjunges)
+- [Gummibeer](https://github.com/gummibeer)
 
 ## License
 
