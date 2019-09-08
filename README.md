@@ -2,12 +2,13 @@
 
 # Stack Overflow in Portuguese Tab
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mateusjunges/ignition-stackoverflow-portuguese.svg?style=flat-square)](https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese)
-[![Build Status](https://img.shields.io/travis/mateusjunges/ignition-stackoverflow-portuguese/master.svg?style=flat-square)](https://travis-ci.org/mateusjunges/ignition-stackoverflow-portuguese)
-[![StyleCI](https://github.styleci.io/repos/207148235/shield)](https://github.styleci.io/repos/207148235)
-[![Total Downloads](https://img.shields.io/packagist/dt/mateusjunges/ignition-stackoverflow-portuguese.svg?style=flat-square)](https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese)
-[![MIT License](https://img.shields.io/github/license/mateusjunges/ignition-stackoverflow-portuguese.svg?label=License&color=blue&style=flat-square&cacheSeconds=600)](https://github.com/mateusjunges/ignition-stackoverflow-portuguese/blob/master/LICENSE)
-
+<p align="center">
+<a href="https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese" target="_blank"><img src="https://poser.pugx.org/mateusjunges/ignition-stackoverflow-portuguese/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese" target="_blank"><img src="https://poser.pugx.org/mateusjunges/ignition-stackoverflow-portuguese/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese" target="_blank"><img src="https://poser.pugx.org/mateusjunges/ignition-stackoverflow-portuguese/license.svg" alt="License"></a>
+<a href="https://github.styleci.io/repos/207148235" target="_blank"><img src="https://github.styleci.io/repos/207148235/shield?style=flat"></a>
+<a href="https://travis-ci.org/mateusjunges/ignition-stackoverflow-portuguese"><img src="https://img.shields.io/travis/mateusjunges/ignition-stackoverflow-portuguese/master.svg?style=flat" alt="Build Status"></a>
+</p>
 
 This package adds a tab to your ignition screen, which shows matching StackOverflow in Portuguese questions, including a search field.
 
