@@ -1,17 +1,18 @@
 {
-    "name": ":vendor/:package_name",
-    "description": ":package_description",
+    "name": "mateusjunges/ignition-stackoverflow-portuguese",
+    "description": "A Laravel Ignition tab that fetches StackOverflow PT-BR questions and provides a searchbar.",
     "keywords": [
         "laravel",
         "flare",
-        "ignition"
+        "ignition",
+        "StackOverflow"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/mateusjunges/ignition-stackoverflow-portuguese",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Mateus Junges",
+            "email": "contato@mateusjunges.com",
             "role": "Developer"
         }
     ],
@@ -25,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            ":namespace_vendor\\:namespace_tab_name\\": "src/"
+            "Junges\\StackOverflowPTBR\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":namespace_vendor\\:namespace_tab_name\\Tests\\": "tests"
+            "Junges\\StackOverflowPTBR\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                ":namespace_vendor\\:namespace_tab_name\\TabServiceProvider"
+                "Junges\\StackOverflowPTBR\\TabServiceProvider"
             ]
         }
     },
