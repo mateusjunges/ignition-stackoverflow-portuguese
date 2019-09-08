@@ -1,10 +1,10 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tab_name\Tests;
+namespace Junges\StackOverflowPTBR\Tests;
 
-use Illuminate\Support\Facades\Route;
+use Facade\Ignition\IgnitionServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use :namespace_vendor\:namespace_tab_name\TabServiceProvider;
+use Junges\StackOverflowPTBR\TabServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
@@ -13,6 +13,7 @@ abstract class TestCase extends Orchestra
     {
         return [
             TabServiceProvider::class,
+            IgnitionServiceProvider::class,
         ];
     }
 }

@@ -8,7 +8,7 @@ class Tab extends BaseTab
 {
     public function name(): string
     {
-        return 'Stack Overflow PT-BR';
+        return 'StackOverflow PT-BR';
     }
 
     public function component(): string
