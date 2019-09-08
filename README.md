@@ -4,7 +4,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mateusjunges/ignition-stackoverflow-portuguese.svg?style=flat-square)](https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese)
 [![Build Status](https://img.shields.io/travis/mateusjunges/ignition-stackoverflow-portuguese/master.svg?style=flat-square)](https://travis-ci.org/mateusjunges/ignition-stackoverflow-portuguese)
-[![StyleCI](https://styleci.io/repos/205465094/shield)](https://styleci.io/repos/205465094)
+[![StyleCI](https://github.styleci.io/repos/207148235/shield)](https://github.styleci.io/repos/207148235)
 [![Total Downloads](https://img.shields.io/packagist/dt/mateusjunges/ignition-stackoverflow-portuguese.svg?style=flat-square)](https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese)
 [![MIT License](https://img.shields.io/github/license/mateusjunges/ignition-stackoverflow-portuguese.svg?label=License&color=blue&style=flat-square&cacheSeconds=600)](https://github.com/mateusjunges/ignition-stackoverflow-portuguese/blob/master/LICENSE)
 
