@@ -6,7 +6,6 @@ use Facade\Ignition\Ignition;
 use Illuminate\Support\ServiceProvider;
 use Facade\IgnitionContracts\SolutionProviderRepository as SolutionProviderRepositoryContract;
 
-
 class TabServiceProvider extends ServiceProvider
 {
     /**

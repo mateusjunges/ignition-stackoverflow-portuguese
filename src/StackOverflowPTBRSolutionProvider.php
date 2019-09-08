@@ -29,6 +29,7 @@ class StackOverflowPTBRSolutionProvider implements HasSolutionsForThrowable
             $url = $this->getUrl($throwable);
             $response = $this->getResponse($url);
             $questions = $this->getQuestionsByResponse($response);
+
             return array_filter(array_map([$this, 'getSolutionByQuestion'], $questions));
         } catch (Exception $exception) {
             return [];
@@ -38,7 +39,6 @@ class StackOverflowPTBRSolutionProvider implements HasSolutionsForThrowable
     /**
      * @param array $question
      * @return BaseSolution|null
-     *
      */
     protected function getSolutionByQuestion(array $question): ?BaseSolution
     {
@@ -54,6 +54,7 @@ class StackOverflowPTBRSolutionProvider implements HasSolutionsForThrowable
         $title = html_entity_decode($question['title'], ENT_QUOTES);
         $description = Str::words(html_entity_decode($question['body_markdown'], ENT_QUOTES), 50, ' ...');
         $link = $question['link'];
+
         return BaseSolution::create($title)
             ->setSolutionDescription($description)
             ->setDocumentationLinks([$title => $link]);
@@ -72,6 +73,7 @@ class StackOverflowPTBRSolutionProvider implements HasSolutionsForThrowable
         if (json_last_error() !== JSON_ERROR_NONE) {
             return [];
         }
+
         return $data['items'] ?? [];
     }
 
@@ -91,6 +93,7 @@ class StackOverflowPTBRSolutionProvider implements HasSolutionsForThrowable
         if (empty($response)) {
             return null;
         }
+
         return $response;
     }
 
@@ -114,6 +117,7 @@ class StackOverflowPTBRSolutionProvider implements HasSolutionsForThrowable
             'filter' => '!9YdnSJ*_T',
             'q' => urlencode($query),
         ]);
+
         return 'https://api.stackexchange.com/2.2/search/advanced?'.urldecode($query);
     }
 }
