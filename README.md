@@ -4,13 +4,14 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mateusjunges/ignition-stackoverflow-portuguese.svg?style=flat-square)](https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese)
 [![Build Status](https://img.shields.io/travis/mateusjunges/ignition-stackoverflow-portuguese/master.svg?style=flat-square)](https://travis-ci.org/mateusjunges/ignition-stackoverflow-portuguese)
-[![Quality Score](https://img.shields.io/scrutinizer/g/mateusjunges/ignition-stackoverflow-portuguese.svg?style=flat-square)](https://scrutinizer-ci.com/g/mateusjunges/ignition-stackoverflow-portuguese)
+[![StyleCI](https://styleci.io/repos/205465094/shield)](https://styleci.io/repos/205465094)
 [![Total Downloads](https://img.shields.io/packagist/dt/mateusjunges/ignition-stackoverflow-portuguese.svg?style=flat-square)](https://packagist.org/packages/mateusjunges/ignition-stackoverflow-portuguese)
+[![MIT License](https://img.shields.io/github/license/mateusjunges/ignition-stackoverflow-portuguese.svg?label=License&color=blue&style=flat-square&cacheSeconds=600)](https://github.com/mateusjunges/ignition-stackoverflow-portuguese/blob/master/LICENSE)
 
 
-This is where your description should go. Try and limit it to a paragraph or two.
+This package adds a tab to your ignition screen, which shows matching StackOverflow in Portuguese questions, including a search field.
 
-Add a screenshot of the tab here.
+![StackOverflow PT-BR Tab](stackoverflow-pt-br-tab.png)
 
 ## Installation
 
