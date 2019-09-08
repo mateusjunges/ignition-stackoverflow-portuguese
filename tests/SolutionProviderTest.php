@@ -3,18 +3,18 @@
 namespace Junges\StackOverflowPTBR\Tests;
 
 use Exception;
+use Throwable;
+use ReflectionClass;
 use Facade\IgnitionContracts\BaseSolution;
 use Junges\StackOverflowPTBR\StackOverflowPTBRSolutionProvider;
-use ReflectionClass;
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
-use Throwable;
 
 class SolutionProviderTest extends TestCase
 {
     public function test_if_it_can_solve_every_throwable() : void
     {
         $this->assertTrue($this->callMethod('canSolve', [
-            new Exception()
+            new Exception(),
         ]));
     }
 
@@ -29,9 +29,9 @@ class SolutionProviderTest extends TestCase
             ])
             ->getMock();
 
-        $exception = new Exception("Exception message");
+        $exception = new Exception('Exception message');
 
-        $url = "https://api.stackexchange.com/2.2/search/advanced?page=1&pagesize=5&order=desc&sort=relevance&site=pt.stackoverflow&accepted=True&filter=!9YdnSJ*_T&q=my+exception+message";
+        $url = 'https://api.stackexchange.com/2.2/search/advanced?page=1&pagesize=5&order=desc&sort=relevance&site=pt.stackoverflow&accepted=True&filter=!9YdnSJ*_T&q=my+exception+message';
         $questions = [
             [
                 'title' => 'question_title',
@@ -40,7 +40,7 @@ class SolutionProviderTest extends TestCase
             ],
         ];
         $response = json_encode([
-            'items' => $questions
+            'items' => $questions,
         ]);
 
         $provider->expects($this->once())->method('getUrl')->with($exception)->willReturn($url);
@@ -55,11 +55,11 @@ class SolutionProviderTest extends TestCase
     {
         $provider = $this->getMockBuilder(StackOverflowPTBRSolutionProvider::class)
             ->onlyMethods([
-                'getUrl'
+                'getUrl',
             ])
             ->getMock();
 
-        $exception = new Exception("Exception message");
+        $exception = new Exception('Exception message');
 
         $provider->expects($this->once())->method('getUrl')
             ->with($exception)
@@ -83,7 +83,7 @@ class SolutionProviderTest extends TestCase
     public function test_it_will_return_null_on_curl_error() : void
     {
         $this->assertNull($this->callMethod('getResponse', [
-            'https://unexisting-domain-to-test.curl-error'
+            'https://unexisting-domain-to-test.curl-error',
         ]));
     }
 
@@ -100,7 +100,6 @@ class SolutionProviderTest extends TestCase
             'https://reqres.in/api/users',
         ]));
     }
-
 
     public function test_it_will_return_empty_array_if_response_is_null(): void
     {
@@ -206,7 +205,6 @@ class SolutionProviderTest extends TestCase
         ]));
     }
 
-
     public function test_it_will_return_base_solution(): void
     {
         $question = [
@@ -246,8 +244,6 @@ class SolutionProviderTest extends TestCase
         ], $solution->getDocumentationLinks());
     }
 
-
-
     /**
      * @param string $method
      * @param array $args
@@ -259,6 +255,7 @@ class SolutionProviderTest extends TestCase
         $class = new ReflectionClass(StackOverflowPTBRSolutionProvider::class);
         $method = $class->getMethod($method);
         $method->setAccessible(true);
+
         return $method->invokeArgs(new StackOverflowPTBRSolutionProvider(), $args);
     }
 }

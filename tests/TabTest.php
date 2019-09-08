@@ -22,6 +22,6 @@ class TabTest extends TestCase
     {
         $tab = new Tab();
         $this->assertArrayHasKey('ignition-stackoverflow-portuguese', $tab->scripts);
-        $this->assertStringEndsWith("dist/js/tab.js", $tab->scripts['ignition-stackoverflow-portuguese']);
+        $this->assertStringEndsWith('dist/js/tab.js', $tab->scripts['ignition-stackoverflow-portuguese']);
     }
 }
