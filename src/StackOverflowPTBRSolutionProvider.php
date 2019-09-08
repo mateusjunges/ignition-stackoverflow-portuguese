@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 use Facade\IgnitionContracts\BaseSolution;
 use Facade\IgnitionContracts\HasSolutionsForThrowable;
 
-class StackOverflowSolutionProvider implements HasSolutionsForThrowable
+class StackOverflowPTBRSolutionProvider implements HasSolutionsForThrowable
 {
     /**
      * @param Throwable $throwable
