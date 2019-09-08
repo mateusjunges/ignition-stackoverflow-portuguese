@@ -4,7 +4,7 @@ namespace Junges\StackOverflowPTBR;
 
 use Facade\Ignition\Ignition;
 use Illuminate\Support\ServiceProvider;
-use Tab;
+use Junges\StackOverflowPTBR\Tab;
 use Facade\IgnitionContracts\SolutionProviderRepository as SolutionProviderRepositoryContract;
 
 

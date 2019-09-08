@@ -1,3 +1,4 @@
 Ignition.registerTab((Vue) => {
-    Vue.component(':package_name', require('./components/Tab'))
+    Vue.use(require('vue-moment'))
+    Vue.component('ignition-stackoverflow-portuguese', require('./components/Tab'))
 });
