@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) :namespace_vendor <hello@flareapp.io>
+Copyright (c) Mateus Junges <contato@mateusjunges.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
