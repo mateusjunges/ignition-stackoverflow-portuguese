@@ -1,6 +1,6 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tab_name;
+namespace Junges\StackOverflowPTBR;
 
 use Facade\Ignition\Tabs\Tab as BaseTab;
 
@@ -8,17 +8,17 @@ class Tab extends BaseTab
 {
     public function name(): string
     {
-        return ':tab_name';
+        return 'Stack Overflow PT-BR';
     }
 
     public function component(): string
     {
-        return ':package_name';
+        return 'ignition-stackoverflow-portuguese';
     }
 
     public function registerAssets()
     {
-        $this->script(':package_name', __DIR__.'/../dist/js/tab.js');
+        $this->script($this->component(), __DIR__.'/../dist/js/tab.js');
     }
 
     public function meta(): array
